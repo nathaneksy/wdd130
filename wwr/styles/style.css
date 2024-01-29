@@ -1,0 +1,47 @@
+body {
+    background-color: pink;
+    font-size: 100%;
+}
+
+header{
+    background-color: red;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h4 { 
+    font-size: 3em;
+}
+
+h1, h2, h3, h4 {
+    color: blue;
+    font-family: cambria;
+}
+
+p {
+    color: orangered;   
+}
+img.logo{
+    width: 100px;
+
+}
+
+#hero-img {
+    width: 100%;
+}
+
+div.social img {
+    width: 80px;
+}
+
+img.card-img {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 100px auto;
+}
+
