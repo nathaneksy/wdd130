@@ -1,0 +1,45 @@
+body {
+    background-color: #fca6c9;
+}
+
+header {
+    color: white;
+    font-size: 6em;
+    text-align: center;
+    font: Trebuchet;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font: Trebuchet;
+}
+
+h2 { 
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    font: Trebuchet;
+}
+
+ol {
+    color: black;
+    font-size: 3em;
+    text-align: center;
+    font: Trebuchet;
+    font-style: bold;
+}
+
+p {
+    color:white;
+    font-size: 6em;
+    text-align: center;
+    font: Trebuchet;
+}
+
+footer{
+    color: black;
+    font-size: 3em;
+    text-align: center;
+    font: Trebuchet;
+}
