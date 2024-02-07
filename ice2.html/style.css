@@ -1,0 +1,33 @@
+div {
+    background-color: grey;
+    width: auto;
+    padding: 80px;
+    margin-top: 0%;
+    margin-bottom: 100px;
+    margin: 50px;
+}
+#desk-img {
+    margin: 20px auto;
+    width: 300px;
+    padding: 20px;
+    border: 10px solid black;
+    border-radius: 50%;
+}
+#graphic-img {
+    margin: 20px auto;
+    width: 300px;
+    padding: 20px;
+    border: 10px solid black;
+    border-radius: 50%;
+}
+#person-img {
+    margin: 20px auto;
+    width: 300px;
+    padding: 20px;
+    border: 10px solid black;
+    border-radius: 50%;
+}
+main {
+text-align: center;
+width: 100%
+}
