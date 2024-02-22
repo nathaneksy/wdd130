@@ -1,0 +1,19 @@
+main {
+    display: grid;
+    grid-template-columns: (1fr 1fr 1fr);
+    grid-template-rows: (1fr 1fr 1fr);
+}
+h1 {
+    text-align: center;
+    
+}
+p {
+    color: red;
+    text-align: center;
+}
+section {
+    background-color: grey;
+    grid-template-columns: 2/3;
+    grid-template-rows: 2/3;
+
+}
