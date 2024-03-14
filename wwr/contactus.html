@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/style.css">
     <style>
         form {
   /* Center the form on the page */
@@ -70,9 +71,42 @@ button {
      between the labels and their text fields */
   margin-left: 0.5em;
 }
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
       </style>
-</head>
+<header>
+    <a id="logo_link" href="index.html">
+        <img class="logo" src="images/dryoarlogo.png" alt="Dry Oar Logo">
+    </a>
+    <nav>
+        <a href="index.html" target="_blank">Home</a>
+        <a href="faq.html" target="_blank">FAQ's</a>
+        <a href="site-plan-rafting.html" target="_blank">Site Plan</a>
+        <a href="contactus.html" target="_blank">Contact Us</a>
+    </nav>
+</header>
+<div id="hero">
+    <div id="hero-box">
+        <img id="hero-img" src="images/hero.png" alt="People enjoying white water rafting">
+    </div>
+    <section id="hero-msg">
+        <h1 class="home-title">How can we help you?</h1>
+        <h4>Ask us a question! </h4>
+    </section>
+</div>
 <body>
+    <div id="feedback"></div>
     <form action="/my-handling-form-page" method="post">
         <ul>
           <li>
@@ -92,5 +126,38 @@ button {
           </li>
         </ul>
     </form>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
 </body>
+<footer>
+    <p>Dry Oar &copy; 20XX - Your First and Last Name Here</p>
+    <p><a href="site-plan-rafting.html" target="_blank">Site Plan</a></p>
+    <p><a href="contactus.html" target="_blank">Contact Us</a></p>
+    <div class="social">
+        <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook.png" alt="fb icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="twitter icon">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram.png" alt="instagram icon">
+        </a>
+    </div>
+</footer>
 </html>
