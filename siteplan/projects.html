@@ -57,6 +57,21 @@
         <section class="msg4">
             <p>I've always enjoyed learning about all things tech and ultimately that is what I want
                 to pursue in a career. </p>
+
+            <button class="accordion">Project 1</button>
+            <div class="panel">
+            <p>Lorem ipsum...</p>
+            </div>
+
+            <button class="accordion">Project 2</button>
+            <div class="panel">
+            <p>Lorem ipsum...</p>
+            </div>
+
+            <button class="accordion">Project 3</button>
+            <div class="panel">
+            <p>Lorem ipsum...</p>
+            </div>
         </section>
     </main>
     <footer>
@@ -72,3 +87,20 @@
     </footer>
 </body>
 </html>
+  
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+    </script>
