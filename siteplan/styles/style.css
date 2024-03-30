@@ -50,7 +50,7 @@ body {
     border-radius: 20px;
     z-index: 1;
     color: white;
-    text-decoration:double;
+    text-decoration: double;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-wrap: balance;
 }
@@ -67,8 +67,6 @@ body {
     color: #ffffff;
 }
 
-
-/* Header styles */
 /* Header styles */
 header {
     background-color: #333;
@@ -106,7 +104,6 @@ nav a {
 nav a:hover {
     color: #ff0000;
 }
-
 
 /* Footer styles */
 footer {
@@ -172,31 +169,159 @@ footer {
     font-size: 14px;
 }
 
-/* Accordian
+
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: #ffffff;
+    color: #000000;
     cursor: pointer;
     padding: 18px;
     width: 100%;
     text-align: left;
-    border: none;
+    border:#be6565;
     outline: none;
     transition: 0.4s;
+    font-size: 20px;
+    border-color: #be6565;
+    align-self: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 15px;
+
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
-    background-color: #ccc;
+    background-color: #a05454;
   }
   
   /* Style the accordion panel. Note: hidden by default */
-  .panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+.panel {
+  padding: 0 18px;
+  background-color: rgb(187, 180, 180);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  
+}
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #5e5e5e;
+    float: right;
+    margin-left: 5px;
   }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+
+
+
+
+
+
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* Main styles */
+main {
+    padding: 20px 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-right: 25px;
+    margin-left: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    background-color: #be6565;
+    color: #ffffff;
+    font-size: 40px;
+    padding: 50px;
+    box-shadow: 10px 10px 10px rgba(1, 0, 1, 0.1);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    gap: 20px;
+    justify-content: space-between; /* Add this line */
+}
+
+.project {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.project-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+}
+.project p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 18px;
+}
+
+.project h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(184, 86, 86, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+
+/* Responsive adjustments */
+@media only screen and (min-width: 768px) {
+    .home-grid {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .project-images {
+        width: auto;
+    }
+    
+    .project-images img {
+        width: 45%;
+    }
+    
+    .msg1,
+    .msg2,
+    .msg3,
+    .msg4 {
+        max-width: 300px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
