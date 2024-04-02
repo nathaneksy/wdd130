@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,9 +12,9 @@
             <img class="logo" src="images/logo.png" alt="Home page logo">
         </a>
         <nav>
-            <a href="index.html" >Home</a>
-            <a href="projects.html" >Projects/Experience</a>
-            <a href="carlot.html" >Car Catalog</a>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects/Experience</a>
+            <a href="carlot.html">Car Catalog</a>
         </nav>
     </header>
     <main class="home-grid">
@@ -57,15 +57,171 @@
         </section>
     </main>
     <footer>
-        <p>Nathan Escujuri
-            nathanescujuri@gmail.com
-        </p>
-        <p><a href="site-plan.html" target="_blank">Site Plan</a></p>
-        <div class="logolink">
-            <a href="index.html" target="_blank">
+        <div class="footer-container">
+            <div class="footer-links-left">
+                <a href="site-plan.html">Site Plan</a>
+            </div>
+            <div class="footer-logo">
                 <img src="images/logo.png" alt="Logo">
-            </a>
+            </div>
+            <div class="footer-links-right">
+                <a href="index.html">Home</a>
+            </div>
         </div>
+        <div class="footer-social-icons">
+            <a href="index.html" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="index.html" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="index.html" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="index.html" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="footer-text">N</p>
+    </footer>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
+    <title>Car Catalog</title>
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo.png" alt="Home page logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects/Experience</a>
+            <a href="carlot.html">Car Catalog</a>
+        </nav>
+    </header>
+    <main class="home-grid">
+
+        <section class="car-container skyline">
+            <img class="car-img" src="images/skyline.jpg" alt="skyline">
+            <img class="caricon" src="images/gtrlogo.jpg">
+            <h2>1997 R33 Nissan Skyline GT-R Nismo</h2>
+            <p>Price: $198,730</p>
+            <div class="dropdown">
+                <button class="dropbtn">Details</button>
+                <div class="dropdown-content">
+                    <p>Restored 1997 R33 GT-R Nismo Edition. Almost everything is aftermarket. </p>
+                    <p>Engine: RB26DETT</p>
+                    <p>Transmission: 5-Speed Manual</p>
+                    <p>Turbo: Yes</p>
+                    <p>Color: Black</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="car-container supra">
+            <img class="car-img" src="images/supra.jpg" alt="supra">
+            <img class="caricon" src="images/toyotalogo.png">
+            <h2>1998 Toyota Supra</h2>
+            <p>Price: $158,200</p>
+            <div class="dropdown">
+                <button class="dropbtn">Details</button>
+                <div class="dropdown-content">
+                    <p>Restored 1998 Toyota Supra. Almost everything is aftermarket</p>
+                    <p>Engine: Toyota 2JZ</p>
+                    <p>Transmission: 5-Speed Manual</p>
+                    <p>Turbo: Yes</p>
+                    <p>Color: White</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="car-container lancer">
+            <img class="car-img" src="images/lancer.jpg" alt="skyline">
+            <img class="caricon" src="images/mitsubishilogo.png">
+            <h2>2017 Mitsubishi Lancer EVO</h2>
+            <p>Price: $63,400</p>
+            <div class="dropdown">
+                <button class="dropbtn">Details</button>
+                <div class="dropdown-content">
+                    <p>2017 Mitsubishi Lancer Evolution. Many aftermarket parts</p>
+                    <p>Engine: 4B11T-type 2.0 litre turbo inline-4</p>
+                    <p>Transmission: 5-Speed Manual</p>
+                    <p>Turbo: Yes</p>
+                    <p>Color: Red</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="car-container porsche">
+            <img class="car-img" src="images/porsche.jpg" alt="porsche">
+            <img class="caricon" src="images/porschelogo.jpg">
+            <h2>2021 Porsche Cayman GT4</h2>
+            <p>Price: $89,620</p>
+            <div class="dropdown">
+                <button class="dropbtn">Details</button>
+                <div class="dropdown-content">
+                    <p>2021 Porsche Cayman GT4 stock, condition: like new</p>
+                    <p>Engine: 4.0-liter flat-6</p>
+                    <p>Transmission: Seven-speed dual-clutch automatic</p>
+                    <p>Turbo: Yes</p>
+                    <p>Color: White</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="car-container astonmartin">
+            <img class="car-img" src="images/astonmartin.jpg" alt="skyline">
+            <img class="caricon" src="images/astonmartinlogo.png">
+            <h2>2020 Aston Martin</h2>
+            <p>Price: $95,950</p>
+            <div class="dropdown">
+                <button class="dropbtn">Details</button>
+                <div class="dropdown-content">
+                    <p>2020 Aston Martin Sport edition, condition: refurbished</p>
+                    <p>Engine: 4.0 L V8</p>
+                    <p>Transmission: 8-Speed Automatic</p>
+                    <p>Turbo: Yes</p>
+                    <p>Color: Grey</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="car-container bmw">
+            <img class="car-img" src="images/bmw.jpg" alt="bmw">
+            <img class="caricon" src="images/bmwlogo.jpg">
+            <h2>2022 BMW M340i</h2>
+            <p>Price: $48,340</p>
+            <div class="dropdown">
+                <button class="dropbtn">Details</button>
+                <div class="dropdown-content">
+                    <p>2022 BMW M340i Coupe, brand new off the lot</p>
+                    <p>Engine: Inline 6</p>
+                    <p>Transmission: 7-Speed Automatic</p>
+                    <p>Turbo: No</p>
+                    <p>Color: White</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links-left">
+                <a href="site-plan.html">Site Plan</a>
+            </div>
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <div class="footer-links-right">
+                <a href="index.html">Home</a>
+            </div>
+        </div>
+        <div class="footer-social-icons">
+            <a href="index.html" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="index.html" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="index.html" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="index.html" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="footer-text">Nathan Escujuri</p>
     </footer>
 </body>
 </html>
